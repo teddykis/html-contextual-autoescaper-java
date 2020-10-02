@@ -7,7 +7,7 @@ This provides a writer-like object that provides two methods:
   write(Object)
 ```
 
-so that the sequence of calls
+So, that the sequence of calls
 
 ```java
  w.writeSafe("<b>");
@@ -18,7 +18,7 @@ so that the sequence of calls
  w.writeSafe(")>");
 ```
 
-results in the output
+Results in the output
 
 ```html
   <b>I &lt;3 Ponies!</b>
@@ -47,7 +47,7 @@ For a more comprehensive example, a template like
 <%}%>
 ```
 
-might correspond to the sequence of calls
+Might correspond to the sequence of calls
 
 ```java
  // Dummy input values.
@@ -72,7 +72,7 @@ might correspond to the sequence of calls
  w.writeSafe("\";\n  })();</script>\n</div>");
 ```
 
-which result in the output
+Which result in the output
 
 ```html
 <div style="color: blue">
